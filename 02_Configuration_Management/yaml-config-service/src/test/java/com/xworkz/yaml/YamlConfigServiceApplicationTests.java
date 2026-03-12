@@ -1,0 +1,13 @@
+package com.xworkz.yaml;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class YamlConfigServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

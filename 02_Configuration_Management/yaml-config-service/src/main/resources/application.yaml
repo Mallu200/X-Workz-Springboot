@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: yaml-config-service  # Equivalent to spring.application.name
+
+server:
+  port: 8081  # Sets the embedded Tomcat server to run on port 8081
+
+mail:
+  gateway:
+    host: smtp.xworkz.com      # Maps to mail.gateway.host
+    port: 587                  # Maps to mail.gateway.port
+    credentials:
+      username: admin@xworkz.com
+      password: "encrypted-password-123"
+    settings:
+      auth-enabled: true       # Nested property: mail.gateway.settings.auth-enabled
+      starttls: true
+      timeout: 5000            # Measured in milliseconds

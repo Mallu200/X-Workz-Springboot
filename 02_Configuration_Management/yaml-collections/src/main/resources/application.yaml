@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: yaml-collections
+
+app:
+  security:
+    # A YAML List (converted to a Java List<String> or String[])
+    # Notice the hyphens (-) which represent individual elements
+    ip-whitelist:
+      - "192.168.1.1"
+      - "127.0.0.1"
+      - "10.0.0.15"
+
+  support:
+    # A YAML Map (converted to a Java Map<String, String>)
+    # These are Key: Value pairs under the 'contacts' parent
+    contacts:
+      IT: "it-support@xworkz.com"
+      HR: "hr-help@xworkz.com"
+      Sales: "sales-leads@xworkz.com"

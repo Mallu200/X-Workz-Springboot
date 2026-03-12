@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: env-variable-secrets
+
+db:
+  connection:
+    username: admin
+    # The application will look for an OS variable named DB_PASSWORD
+    password: ${DB_PASSWORD:dev_pass}
+    url: "jdbc:mysql://localhost:3306/xworkz_db"

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: relaxed-binding-validation
+
+payment:
+  gateway:
+    # Kebab-case: api-url -> Java: apiUrl
+    api-url: "https://api.xworkz-pay.com"
+
+    # Kebab-case: auth-token -> Java: authToken
+    auth-token: "secure-token-XYZ"
+
+    # Kebab-case: max-timeout-ms -> Java: maxTimeoutMs
+    max-timeout-ms: 5000
+
+    # Standard: support-email -> Java: supportEmail
+    support-email: "not-an-email"
